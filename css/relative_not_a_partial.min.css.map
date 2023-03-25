@@ -1,0 +1,1 @@
+{"version":3,"sources":["../vendor/bundle/ruby/2.6.0/gems/sassc-rails-2.1.2/test/dummy/app/assets/stylesheets/partials/subfolder/relative_not_a_partial.scss"],"names":[],"mappings":"AAAA,eACE,qBAAA","file":"relative_not_a_partial.min.css"}

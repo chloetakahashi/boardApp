@@ -1,4 +1,8 @@
-
+ja:
+  defaults:
+    login: 'ログイン'
+    register: '登録'
+    logout: 'ログアウト'
     new:
       title: 'ユーザー登録'
       to_login_page: 'ログインページへ'

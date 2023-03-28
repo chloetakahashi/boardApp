@@ -17,4 +17,3 @@ class UserSessionsController < ApplicationController
     redirect_to root_path, success: t('.success')
   end
 end
-end

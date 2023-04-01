@@ -3,6 +3,9 @@ ja:
     login: 'ログイン'
     register: '登録'
     logout: 'ログアウト'
+    message:
+      require_login: 'ログインしてください'
+  users:
     new:
       title: 'ユーザー登録'
       to_login_page: 'ログインページへ'
@@ -22,3 +25,7 @@ ja:
   boards:
     index:
       title: '掲示板一覧'
+      no_result: '掲示板がありませんでした'
+  time:
+    formats:
+        long: "%Y年%m月%d日 %H時%M分"

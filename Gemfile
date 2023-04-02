@@ -38,6 +38,9 @@ gem 'sorcery', '0.14.0'
 gem 'pry-byebug'
 gem 'rails-i18n', '~> 5.1'
 gem "draper"
+gem 'carrierwave', '~> 2.0'
+gem 'mini_magick'
+gem 'rmagick'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

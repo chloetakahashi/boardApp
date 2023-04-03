@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   # root :to => 'users#index'
   resources :users, only: %i[new create]
-  resources :boards, only: %i[index new create]
+  resources :boards, only: %i[index new create show] do
+    resources :comments, only: %i[create], shallow: true
+  end
 
   get 'login' => 'user_sessions#new', :as => :login
   post 'login' => "user_sessions#create"

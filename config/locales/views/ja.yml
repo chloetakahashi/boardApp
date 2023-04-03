@@ -7,6 +7,7 @@ ja:
       require_login: 'ログインしてください'
       created: '%{item}作成しました'
       not_created: '%{item}を作成できませんでした'
+    post: '投稿する'
   users:
     new:
       title: 'ユーザー登録'
@@ -30,6 +31,13 @@ ja:
       no_result: '掲示板がありませんでした'
     new:
       title: '掲示板作成'
+    show:
+      title: '掲示板詳細'
+    bookmarks:
+      title: 'ブックマーク一覧'
+  profiles:
+    show:
+      title: 'プロフィール'
   time:
     formats:
         long: "%Y年%m月%d日 %H時%M分"

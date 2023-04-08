@@ -10,7 +10,7 @@ ja:
       updated: '%{item}更新しました'
       not_updated: '%{item}を更新できませんでした'
       destroyed: '%{item}を削除しました'
-      delete_confirm: '掲示板を削除してもよろしいでしょうか？'
+      delete_confirm: '%{item}を削除してもよろしいでしょうか？'
     post: '投稿する'
     edit: '更新する'
   users:
@@ -42,6 +42,13 @@ ja:
       title: '掲示板編集'
     bookmarks:
       title: 'ブックマーク一覧'
+      no_result: 'ブックマーク中の掲示板がありません'
+  bookmarks:
+      create:
+        success: 'ブックマークしました'
+      destroy:
+        unbookmark_confirm: 'ブックマークを外してもよろしいでしょうか'
+        unbookmark: 'ブックマークを外しました'
   profiles:
     show:
       title: 'プロフィール'

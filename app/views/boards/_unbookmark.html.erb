@@ -1,0 +1,6 @@
+<%= link_to bookmark_path(current_user.bookmarks.find_by(board_id: board.id)),
+data: { confirm: t('bookmarks.destroy.unbookmark_confirm') },
+id: "js-bookmark-button-for-board-#{board.id}",
+class: 'float-right', method: :delete do %>
+	<%= icon 'fas', 'star' %>
+<% end %>

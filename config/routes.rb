@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # root :to => 'users#index'
   resources :users, only: %i[new create]
-  resources :boards, only: %i[index new create show] do
+  resources :boards, only: %i[index new create show edit update destroy] do
     resources :comments, only: %i[create], shallow: true
   end
 

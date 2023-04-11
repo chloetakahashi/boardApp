@@ -24,9 +24,13 @@
           </a>
         </li>
         <li class="list-inline-item">
-          <a href="#" class='js-edit-comment-button' data-comment-id="<%= comment.id %>">
+        <%= link_to comment_path(comment),
+        class:'js-delete-comment-button',
+        method: :delete,
+        data: {confirm:t('comments.destroy.delete_confirm')},
+        remote: true do%>
             <%= icon 'fas', 'trash' %>
-          </a>
+          <% end %>
         </li>
       </ul>
     </td>

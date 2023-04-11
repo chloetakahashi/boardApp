@@ -49,6 +49,9 @@ ja:
       destroy:
         unbookmark_confirm: 'ブックマークを外してもよろしいでしょうか'
         unbookmark: 'ブックマークを外しました'
+  comments:
+      destroy:
+        delete_confirm: 'コメントを削除してもよろしいでしょうか？'
   profiles:
     show:
       title: 'プロフィール'

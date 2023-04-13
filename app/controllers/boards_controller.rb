@@ -2,8 +2,14 @@ class BoardsController < ApplicationController
 	before_action :set_board, only: [:edit, :update, :destroy]
 
 	def index
-    @boards = Board.all.includes([:user, :bookmarks]).order(created_at: :desc).page(params[:page])
-	end
+  @q = Board.ransack(params[:q])
+  @boards = @q.result(distinct: true).includes(:user).order(created_at: :desc).page(params[:page])
+end
+
+def bookmarks
+  @q = current_user.bookmark_boards.ransack(params[:q])
+	@bookmark_boards = @q.result(distinct: true).includes(:user).order(created_at: :desc).page(params[:page])
+end
 
 	def new
 		@board = Board.new
@@ -42,9 +48,6 @@ class BoardsController < ApplicationController
     redirect_to boards_path, success: t('defaults.message.destroyed', item: Board.model_name.human)
   end
 
-  	def bookmarks
-	@bookmark_boards = current_user.bookmark_boards.includes(:user).order(created_at: :desc).page(params[:page])
-	end
 
 
 	private

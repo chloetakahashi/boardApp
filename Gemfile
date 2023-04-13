@@ -42,6 +42,7 @@ gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
 gem 'rmagick'
 gem 'kaminari'
+gem 'ransack'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

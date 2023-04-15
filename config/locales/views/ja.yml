@@ -3,7 +3,9 @@ ja:
     login: 'ログイン'
     register: '登録'
     logout: 'ログアウト'
-    search_word: '検索する'
+    search_word: '検索ワード'
+    edit: '編集'
+    cancel: 'キャンセル'
     message:
       require_login: 'ログインしてください'
       created: '%{item}作成しました'
@@ -56,6 +58,8 @@ ja:
   profiles:
     show:
       title: 'プロフィール'
+    edit:
+      title: 'プロフィール編集'
   time:
     formats:
         long: "%Y年%m月%d日 %H時%M分"

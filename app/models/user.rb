@@ -8,7 +8,7 @@ class User < ApplicationRecord
   has_many :bookmark_boards, through: :bookmarks, source: :board
 
   # add
-  validates :password, length: { minimum: 3 }, if: -> { new_record? || changes[:crypted_password] }
+  validates :password, length: { minimum: 3 }, if: -> { new_record? || changes[:crypted_password] || changes[:reset_password_token]}
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
   validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
 
@@ -17,6 +17,11 @@ class User < ApplicationRecord
 	validates :email, presence: true
   validates :first_name, presence: true, length: {maximum: 255}
 	validates :last_name, presence: true, length: {maximum: 255}
+
+
+  # reset_password_token becomes nil when the password is reset
+  # add allow_nil: true to skip validation when the object is nil
+  validates :reset_password_token, presence: true, uniqueness: true, allow_nil: true
 
   def own?(comment)
   comment.user_id == id

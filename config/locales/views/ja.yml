@@ -16,6 +16,7 @@ ja:
       delete_confirm: '%{item}を削除してもよろしいでしょうか？'
     post: '投稿する'
     edit: '更新する'
+    password_reset: 'パスワードリセット'
   users:
     new:
       title: 'ユーザー登録'
@@ -60,6 +61,17 @@ ja:
       title: 'プロフィール'
     edit:
       title: 'プロフィール編集'
+  password_resets:
+    new:
+      title: 'パスワードリセット申請'
+      submit: '送信'
+    create:
+      success: 'パスワードリセット手順を送信しました'
+    edit:
+      title: 'パスワードリセット'
+    update:
+      success: 'パスワードが変更されました。'
+      fail: 'パスワードの変更が失敗しました。'
   time:
     formats:
         long: "%Y年%m月%d日 %H時%M分"

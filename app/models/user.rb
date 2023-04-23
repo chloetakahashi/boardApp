@@ -23,6 +23,8 @@ class User < ApplicationRecord
   # add allow_nil: true to skip validation when the object is nil
   validates :reset_password_token, presence: true, uniqueness: true, allow_nil: true
 
+  enum role: { general: 0, admin: 1}
+
   def own?(comment)
   comment.user_id == id
   end

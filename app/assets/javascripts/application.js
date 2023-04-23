@@ -18,4 +18,5 @@
 
 //= require rails-ujs
 //= require activestorage
-//= require_tree .
+//= require common.js
+//= require cable.js

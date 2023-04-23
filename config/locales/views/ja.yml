@@ -14,6 +14,7 @@ ja:
       not_updated: '%{item}を更新できませんでした'
       destroyed: '%{item}を削除しました'
       delete_confirm: '%{item}を削除してもよろしいでしょうか？'
+      not_authorized: '権限がありません'
     post: '投稿する'
     edit: '更新する'
     password_reset: 'パスワードリセット'
@@ -72,6 +73,18 @@ ja:
     update:
       success: 'パスワードが変更されました。'
       fail: 'パスワードの変更が失敗しました。'
+  admin:
+    user_sessions:
+      new:
+        title: 'ログイン'
+      create:
+        success: 'ログインしました'
+        fail: 'ログインに失敗しました'
+      destroy:
+        success: 'ログアウトしました'
+    dashboards:
+      index:
+        title: 'ダッシュボード'
   time:
     formats:
         long: "%Y年%m月%d日 %H時%M分"

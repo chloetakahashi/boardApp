@@ -5,6 +5,8 @@ ja:
       board: '掲示板'
       comment: 'コメント'
       bookmark: 'ブックマーク'
+      avatar: 'アバター'
+      role: '権限'
     attributes:
       user:
         email: 'メールアドレス'
@@ -18,5 +20,29 @@ ja:
         title: 'タイトル'
         body: '本文'
         board_image: 'サムネイル'
+        user: '作成者'
       comment:
         body: 'コメント'
+    attributes:
+      board:
+        id: 'ID'
+        created_at: '作成日時'
+        updated_at: '更新日時'
+        title: 'タイトル'
+        body: '本文'
+        user: 'ユーザー'
+        board_image: 'サムネイル'
+      user:
+        full_name: '氏名'
+        role: '権限'
+        created_at: '作成日時'
+        id: 'ID'
+        email: 'メールアドレス'
+        last_name: '姓'
+        first_name: '名'
+        avatar: 'アバター'
+    enums:
+      user:
+        role:
+          general: '一般'
+          admin: '管理者'

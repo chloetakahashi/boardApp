@@ -4,8 +4,11 @@ ja:
     register: '登録'
     logout: 'ログアウト'
     search_word: '検索ワード'
+    show: '詳細'
     edit: '編集'
+    delete: '削除'
     cancel: 'キャンセル'
+    unspecified: '指定なし'
     message:
       require_login: 'ログインしてください'
       created: '%{item}作成しました'
@@ -16,7 +19,6 @@ ja:
       delete_confirm: '%{item}を削除してもよろしいでしょうか？'
       not_authorized: '権限がありません'
     post: '投稿する'
-    edit: '更新する'
     password_reset: 'パスワードリセット'
   users:
     new:
@@ -85,6 +87,20 @@ ja:
     dashboards:
       index:
         title: 'ダッシュボード'
+    users:
+      index:
+        title: 'ユーザー一覧'
+      show:
+        title: 'ユーザー詳細'
+      edit:
+        title: 'ユーザー編集'
+    boards:
+      index:
+        title: '掲示板一覧'
+      show:
+        title: '掲示板詳細'
+      edit:
+        title: '掲示板編集'
   time:
     formats:
         long: "%Y年%m月%d日 %H時%M分"
